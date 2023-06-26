@@ -12,10 +12,16 @@ export class LoginComponent implements OnInit{
 
   username:any
   password:any
+  showPassword = false
+
 
  constructor(private router:Router, private api:DataService) { }
   ngOnInit(): void {
   }
+  
+  pass() {
+  this.showPassword = !this.showPassword;
+}
 
   submit(){
     if(this.username=="admin" && this.password=="admin"){
@@ -24,5 +30,6 @@ export class LoginComponent implements OnInit{
   else{
     alert("Wrong Username or Password!")
   }
+  
 }
 }

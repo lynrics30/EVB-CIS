@@ -23,8 +23,7 @@ a .record{
     height: 20px;
 }
 
-.nav-link.active,
-.show>.nav-link {
+.nav-link.active, .show>.nav-link {
     background-color: transparent;
 }
 
@@ -106,9 +105,19 @@ ul i{
 
 .nav-item{
     margin-right: 8px;
+    background-color: transparent !important;
 }
 
-.container-fluid .nav-link:hover {
+.side{
+    padding: 0;
+    margin-left: 12px;
+}
+
+.con{
+    margin-left: 1080px;
+}
+
+.con .nav-link:hover {
     background-color: transparent !important;
 }
 

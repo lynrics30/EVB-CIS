@@ -14,9 +14,7 @@
           </div>
 
           <div class="mt-5">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Username</label
-            >
+            <label for="username" class="form-label">Username</label>
             <input
               type="text"
               [(ngModel)]="username"
@@ -24,19 +22,26 @@
               id="username"
               required=""
             />
-            <label for="exampleFormControlInput1" class="form-label"
-              >Password</label
-            >
+            <label for="password" class="form-label">Password</label>
             <div class="pass">
               <input
-                type="password"
+                type="{{ showPassword ? 'text' : 'password' }}"
                 [(ngModel)]="password"
                 class="form-control"
                 id="password"
                 required=""
               />
-              <i class="bi bi-eye"></i>
+              <i
+                class="bi"
+                [ngClass]="{
+                  'bi-eye': !showPassword,
+                  'bi-eye-slash': showPassword
+                }"
+                (click)="pass()"
+              >
+              </i>
             </div>
+
             <button type="button" (click)="submit()">Login</button>
           </div>
         </div>

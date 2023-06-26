@@ -44,10 +44,11 @@ label{
     position: relative;
 }
 
-.pass .bi-eye {
+.bi {
     position: absolute;
     right: 2px;
     top: 12px;
+    font-size: 17px;
     cursor: pointer;
 }
 
@@ -121,3 +122,4 @@ button:hover::after {
     opacity: 1;
     transform: scale(1, 1);
 }
+
