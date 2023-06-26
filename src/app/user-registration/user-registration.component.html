@@ -1,97 +1,62 @@
-<div
-  class="container d-flex justify-content-center align-items-center"
-  style="height: 100vh"
->
-  <div
-    class="container col-xl-10 px-0 mx-auto shadow rounded"
-    style="background-color: white; height: 600px"
-  >
-    <div class="container-fluid">
+<div class="img-fluid">
+  <img src=".././assets/img/evblogo.png" style="align-content: center" alt="" />
+</div>
+<div class="main">
+  <div class="container-fluid">
+    <div class="wrapper-fluid">
       <div class="row no-gutter">
-        <div
-          class="col-md-7 d-none d-md-flex bg-image rounded-start"
-          style="display: grid; place-items: center"
-        >
-          <img
-            src=".././assets/img/evblogo.png"
-            height="550px"
-            width="100%"
-            alt=""
-          />
-        </div>
+        <div class="col-mb-12">
+          <h2 style="color: #2e664c; font-weight: bold; font-size: 25px">
+            Create an Account
+          </h2>
+          <p>Enter the personal details to create account</p>
 
-        <div class="col-md-5" sys_get_temp_dir>
-          <div class="login d-flex align-items-center py-2">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 text-center">
-                  <h5 class="mb-0" style="font-size: 35px">{{ title }}</h5>
-                  <p style="font-size: 14px" class="text-muted mb-3">
-                    Sign in to your account.
-                  </p>
-                </div>
-                <div class="col-lg-10 col-xl-10 mx-auto">
-                  <form>
-                    <div class="form-group">
-                      <label
-                        for="inputEmail"
-                        style="
-                          font-weight: normal;
-                          font-size: 13px;
-                          margin-bottom: 0px;
-                          margin-top: 15px;
-                        "
-                        >Username/ID</label
-                      >
-                      <input
-                        id="inputEmail"
-                        type="text"
-                        name="username"
-                        placeholder="Enter Username"
-                        required=""
-                        autofocus=""
-                        class="form-control"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label
-                        for="inputPassowrd"
-                        style="
-                          font-weight: normal;
-                          font-size: 13px;
-                          margin-bottom: 0px;
-                          margin-top: 15px;
-                        "
-                        >Password</label
-                      >
-                      <input
-                        id="inputPassword"
-                        type="password"
-                        name="password"
-                        placeholder="Enter Password"
-                        required=""
-                        class="form-control"
-                      />
-                    </div>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Branch</option>
+            <option value="1">Biñan Branch</option>
+            <option value="2">Cainta Branch</option>
+            <option value="3">Calapan Branch</option>
+            <option value="4">Head Office</option>
+            <option value="5">Intramuros Branch</option>
+            <option value="6">Lemery Branch</option>
+            <option value="7">Lipa Branch</option>
+            <option value="8">Printing Press</option>
+            <option value="9">Stronghold Insurance Company, Inc.</option>
+            <option value="10">Taytay Branch</option>
+          </select>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Department</option>
+            <option value="1">Marketing Department</option>
+            <option value="2">Finance Department</option>
+            <option value="3">Licensing Department</option>
+            <option value="4">Accounting Department</option>
+            <option value="5">Disbursing Department</option>
+            <option value="6">IICS Department</option>
+            <option value="7">Documentation Department</option>
+            <option value="8">SPP Department</option>
+          </select>
 
-                    <button
-                      type="submit"
-                      name="login"
-                      mat-raised-button
-                      style="
-                        width: 100%;
-                        margin-top: 20px;
-                        background-color: #198754;
-                        color: white;
-                      "
-                    >
-                      Sign in
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
+          <div class="mt-5" style="font-weight: bold">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Full Name</label
+            >
+            <input type="text" class="form-control" id="fullname" />
+            <label for="exampleFormControlInput1" class="form-label"
+              >Username</label
+            >
+            <input type="text" class="form-control" id="username" />
+            <label for="exampleFormControlInput1" class="form-label"
+              >Password</label
+            >
+            <input type="password" class="form-control" id="password" />
+            <label for="exampleFormControlInput1" class="form-label"
+              >Designation</label
+            >
+            <input type="text" class="form-control" id="designation" />
           </div>
+          <button type="button" (click)="submit()" class="btn btn-success">
+            Create an Account
+          </button>
         </div>
       </div>
     </div>

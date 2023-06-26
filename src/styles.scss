@@ -1,29 +1,40 @@
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-
-}
-
 body,
 html {
     height: 100%;
     width: 100%;
-    background: gainsboro;
-    margin: 0;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin: 0 auto;
+    font-family: "Nunito", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    text-align: left;
-    background-color: #fafafa;
+    background-color: #f6f9ff;
     overflow: hidden;
 }
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background: #f6f9ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
 .active {
     background-color: #1730743d;

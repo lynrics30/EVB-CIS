@@ -1,0 +1,46 @@
+<div class="img-fluid">
+  <img src=".././assets/img/evblogo.png" style="align-content: center" alt="" />
+</div>
+<div class="main">
+  <div class="container-fluid">
+    <div class="wrapper-fluid">
+      <div class="row no-gutter">
+        <div class="col-mb-12">
+          <div class="title">
+            <h2 style="color: #2e664c; font-weight: bold; font-size: 25px">
+              Login to your Account
+            </h2>
+            <span>Enter your username & password to login</span>
+          </div>
+
+          <div class="mt-5">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Username</label
+            >
+            <input
+              type="text"
+              [(ngModel)]="username"
+              class="form-control"
+              id="username"
+              required=""
+            />
+            <label for="exampleFormControlInput1" class="form-label"
+              >Password</label
+            >
+            <div class="pass">
+              <input
+                type="password"
+                [(ngModel)]="password"
+                class="form-control"
+                id="password"
+                required=""
+              />
+              <i class="bi bi-eye"></i>
+            </div>
+            <button type="button" (click)="submit()">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
