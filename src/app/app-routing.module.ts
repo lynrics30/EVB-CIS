@@ -5,6 +5,7 @@ import { HomeComponent } from './admin/home/home.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { NonIndividualComponent } from './admin/non-individual/non-individual.component';
 
 const routes: Routes = [
   {
@@ -19,15 +20,17 @@ const routes: Routes = [
     path: 'home',
     component:HomeComponent
   },
-
   {
     path: 'dashboard',
     component:DashboardComponent
   },
-
   {
     path: 'sidebar',
     component:SidebarComponent
+  },
+  {
+    path: 'non-individual',
+    component:NonIndividualComponent
   },
   
   {

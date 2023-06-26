@@ -8,7 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
-import {MatSidenavModule} from '@angular/material/sidenav'; 
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { NonIndividualComponent } from './non-individual/non-individual.component'; 
 
 
 
@@ -17,6 +18,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     HomeComponent,
     SidebarComponent,
     DashboardComponent,
+    NonIndividualComponent,
 
     
   ],

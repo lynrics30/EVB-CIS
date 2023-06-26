@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { NonIndividualComponent } from './non-individual/non-individual.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
           {
             path:'sidebar',
             component: SidebarComponent
+          },
+          {
+            path:'non-individual',
+            component: NonIndividualComponent
           },
         {
             path:'',
