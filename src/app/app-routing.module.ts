@@ -4,8 +4,8 @@ import { UserRegistrationComponent } from './user-registration/user-registration
 import { HomeComponent } from './admin/home/home.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
-import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { NonIndividualComponent } from './admin/non-individual/non-individual.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
 
 const routes: Routes = [
   {
