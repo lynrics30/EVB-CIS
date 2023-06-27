@@ -1,49 +1,45 @@
 <div class="img-fluid">
   <img src=".././assets/img/EVBGOC.png" style="align-content: center" alt="" />
 </div>
-<div class="main">
+<div class="main" sys_get_temp_dir>
   <div class="container-fluid">
-    <div class="wrapper-fluid">
-      <div class="row no-gutter">
-        <div class="col-mb-12">
-          <div class="title">
-            <h2 style="color: #2e664c; font-weight: bold; font-size: 25px">
-              Login to your Account
-            </h2>
-            <span>Enter your username & password to login</span>
-          </div>
+    <div class="row no-gutter">
+      <div class="col-mb-12">
+        <div class="title">
+          <h2>Login to your Account</h2>
+          <span>Enter your username & password to login</span>
+        </div>
 
-          <div class="mt-5">
-            <label for="username" class="form-label">Username</label>
+        <div class="mt-5">
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="text"
+            [(ngModel)]="username"
+            class="form-control"
+            id="username"
+            required=""
+          />
+          <label for="password" class="form-label">Password</label>
+          <div class="pass">
             <input
-              type="text"
-              [(ngModel)]="username"
+              type="{{ showPassword ? 'text' : 'password' }}"
+              [(ngModel)]="password"
               class="form-control"
-              id="username"
+              id="password"
               required=""
             />
-            <label for="password" class="form-label">Password</label>
-            <div class="pass">
-              <input
-                type="{{ showPassword ? 'text' : 'password' }}"
-                [(ngModel)]="password"
-                class="form-control"
-                id="password"
-                required=""
-              />
-              <i
-                class="bi"
-                [ngClass]="{
-                  'bi-eye': !showPassword,
-                  'bi-eye-slash': showPassword
-                }"
-                (click)="pass()"
-              >
-              </i>
-            </div>
-
-            <button type="button" (click)="submit()">Login</button>
+            <i
+              class="bi"
+              [ngClass]="{
+                'bi-eye': !showPassword,
+                'bi-eye-slash': showPassword
+              }"
+              (click)="pass()"
+            >
+            </i>
           </div>
+
+          <button type="button" (click)="submit()">Login</button>
         </div>
       </div>
     </div>
