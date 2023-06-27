@@ -25,11 +25,11 @@ export class LoginComponent implements OnInit{
 
   submit(){
     if(this.username=="admin" && this.password=="admin"){
+    console.log("Login Successfully!")
     this.router.navigate(['/admin'])
   }
   else{
-    alert("Wrong Username or Password!")
+    alert("Invalid Username or Password!")
   }
-  
 }
 }
