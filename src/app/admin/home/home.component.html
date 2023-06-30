@@ -29,7 +29,7 @@
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        <img src=".././assets/img/user.png" alt="" width="35px" height="35px" />
+        <img src="/assets/img/user.png" alt="" width="35px" height="35px" />
         <span class="ads">Administrator</span>
       </div>
       <ul class="dropdown-menu">
@@ -39,6 +39,7 @@
             Profile</a
           >
         </li>
+        <li><hr class="dropdown-divider" /></li>
         <li>
           <a class="dropdown-item" href="#">
             <i class="bi bi-gear"></i>
@@ -59,20 +60,26 @@
 
 <div class="side-bar d-flex flex-column flex-shrink-0 p-4" style="width: 330px">
   <ul class="nav nav-pills flex-column mb-auto">
-    <li class="nav-item" routerLink="/dashboard" routerLinkActive="active">
-      <a class="nav-link active text-dark" aria-current="page">
-        <i class="bi bi-grid"></i>
-        <span class="menu">Dashboard</span>
-      </a>
-    </li>
-    <li class="nav-item" routerLink="/about" routerLinkActive="active">
-      <a class="nav-link active text-dark" aria-current="page">
-        <i class="bi bi-megaphone"></i>
-        <span class="menu">Announcement</span>
-      </a>
-    </li>
+    <div class="hoho">
+      <li class="nav-item" routerLink="./dashboard" routerLinkActive="active">
+        <a class="nav-link text-dark" aria-current="page">
+          <i class="bi bi-grid"></i>
+          <span class="menu">Dashboard</span>
+        </a>
+      </li>
+      <li
+        class="nav-item mt-1"
+        routerLink="./announcement"
+        routerLinkActive="active"
+      >
+        <a class="nav-link text-dark" aria-current="page">
+          <i class="bi bi-megaphone"></i>
+          <span class="menu">Announcement</span>
+        </a>
+      </li>
+    </div>
 
-    <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion accordion-flush mt-1" id="accordionFlushExample">
       <div class="accordion-item">
         <div class="accordion-header" id="flush-headingOne">
           <button
@@ -96,12 +103,13 @@
           <div class="accordion-body">
             <li
               class="nav-item"
-              routerLink="/non-individual"
+              routerLink="./non-individual"
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Non-Individual</span>
+                <i class="bi bi-record"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Non-Individual</span>
               </a>
             </li>
             <li
@@ -110,8 +118,9 @@
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Individual</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Individual</span>
               </a>
             </li>
           </div>
@@ -145,68 +154,80 @@
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Overall</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Overall</span>
               </a>
             </li>
             <li class="nav-item" routerLink="./rdf" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Biñan Branch</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Biñan Branch</span>
               </a>
             </li>
             <li class="nav-item" routerLink="./nc" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Cainta Branch</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Cainta Branch</span>
               </a>
             </li>
             <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Calapan Branch</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Calapan Branch</span>
               </a>
             </li>
             <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Head Office</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Head Office</span>
               </a>
             </li>
             <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Intramuros Branch</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Intramuros Branch</span>
               </a>
             </li>
             <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Lemery Branch</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Lemery Branch</span>
               </a>
             </li>
             <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Lipa Branch</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Lipa Branch</span>
               </a>
             </li>
             <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Printing Press</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Printing Press</span>
               </a>
             </li>
             <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Stronghold Insurance Company, Inc.</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Stronghold Insurance</span>
+                <div style="margin-left: 18px">Company, Inc.</div>
               </a>
             </li>
             <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Taytay Branch</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Taytay Branch</span>
               </a>
             </li>
           </div>
@@ -236,8 +257,9 @@
           <div class="accordion-body">
             <li class="nav-item" routerLink="./hei" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>1601C</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>1601C</span>
               </a>
             </li>
             <li
@@ -246,8 +268,9 @@
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>2551Q</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>2551Q</span>
               </a>
             </li>
             <li
@@ -256,8 +279,9 @@
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>2550 M-Q</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>2550 M-Q</span>
               </a>
             </li>
             <li
@@ -266,8 +290,9 @@
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>2316</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>2316</span>
               </a>
             </li>
             <li
@@ -276,8 +301,9 @@
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>0619E / 1601EQ</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>0619E / 1601EQ</span>
               </a>
             </li>
             <li
@@ -286,8 +312,9 @@
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>0619F / 1601FQ</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>0619F / 1601FQ</span>
               </a>
             </li>
             <li
@@ -296,8 +323,9 @@
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>1701Q / 1702Q</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>1701Q / 1702Q</span>
               </a>
             </li>
             <li
@@ -306,8 +334,9 @@
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>2306 / 2307</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>2306 / 2307</span>
               </a>
             </li>
           </div>
@@ -378,8 +407,9 @@
           <div class="accordion-body">
             <li class="nav-item" routerLink="./hei" routerLinkActive="active">
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Branches</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Branches</span>
               </a>
             </li>
           </div>

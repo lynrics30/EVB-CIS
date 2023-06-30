@@ -22,6 +22,10 @@ img {
   width: 185px;
 }
 
+img:hover {
+  scale: 1.1;
+}
+
 h2 {
   color: #2e664c;
   font-weight: bold;
@@ -114,7 +118,7 @@ button::after {
   height: 100%;
   border-radius: 5px;
   transition: all 0.4s;
-  border: 1px solid rgb(13, 165, 51);
+  border: 1px solid rgb(0, 121, 30);
   transform: scale(1.5, 1.5);
   opacity: 0;
   z-index: 1;
@@ -123,6 +127,21 @@ button::after {
 button:hover::after {
   opacity: 1;
   transform: scale(1, 1);
+}
+
+#forgotPass {
+  font-size: 12px;
+  color: #000000;
+  font-family: Poppins;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#forgotPass:hover {
+  color: #2e664c;
+  text-decoration: underline;
+  font-size: 13px;
 }
 
 .invalid-feedback {

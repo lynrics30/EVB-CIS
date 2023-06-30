@@ -4,15 +4,24 @@ import {MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/mater
 import {MatIconModule} from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { LoginComponent } from './pages/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { NonIndividualComponent } from './pages/non-individual/non-individual.component';
+import { UserRegistrationComponent } from './pages/user-registration/user-registration.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { AnnouncementComponent } from './pages/announcement/announcement.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { IndividualComponent } from './pages/individual/individual.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     UserRegistrationComponent,
+    LoginComponent,
+    NonIndividualComponent,
+    DashboardComponent,
+    AnnouncementComponent,
+    IndividualComponent,
 
   ],
   imports: [
@@ -20,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MatIconModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    MatToolbarModule,
 
 
 

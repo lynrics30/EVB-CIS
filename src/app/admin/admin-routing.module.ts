@@ -1,29 +1,37 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NonIndividualComponent } from '../pages/non-individual/non-individual.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { HomeComponent } from './home/home.component';
-import { NonIndividualComponent } from './non-individual/non-individual.component';
+import { AnnouncementComponent } from '../pages/announcement/announcement.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { HomeComponent } from './home/home.component';
+import { IndividualComponent } from '../pages/individual/individual.component';
 
 const routes: Routes = [
   {
         path: '',
         component: HomeComponent, children:[
           {
-            path:'dashboard',
-            component: DashboardComponent
+            path: 'dashboard',
+            component:DashboardComponent
           },
           {
-            path:'sidebar',
-            component: SidebarComponent
+            path: 'announcement',
+            component:AnnouncementComponent
           },
           {
             path:'non-individual',
-            component: NonIndividualComponent
+            component:NonIndividualComponent
           },
+          {
+            path:'individual',
+            component:IndividualComponent
+          },
+
+
         {
             path:'',
-            redirectTo: '/home',
+            redirectTo: '/admin/dashboard',
             pathMatch: 'full'
         }
         ]

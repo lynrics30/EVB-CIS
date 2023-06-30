@@ -13,9 +13,8 @@
   margin-top: 60px;
 }
 
-.bi-list {
-  font-size: 35px;
-  cursor: pointer;
+.accordion-body .nav-item {
+  padding: 0;
 }
 
 a .record {
@@ -23,13 +22,18 @@ a .record {
   height: 20px;
 }
 
-.nav-link.active,
-.show > .nav-link {
-  background-color: transparent;
+.active i,
+.active span {
+  color: #0e7545;
 }
 
 .nav-link:hover {
-  background: rgba(165, 165, 165, 0.199);
+  background-color: #00814510;
+  cursor: pointer;
+}
+
+.hoho .active {
+  background-color: #00814510;
 }
 
 .menu {
@@ -41,6 +45,11 @@ a .record {
 .accordion-button {
   outline: none !important;
   box-shadow: none !important;
+  padding: 0.7rem 1rem;
+}
+
+.accordion-button:hover {
+  background-color: #00814510;
 }
 
 .accordion li {
@@ -49,7 +58,7 @@ a .record {
 
 .accordion-button:not(.collapsed) {
   color: #0e7545;
-  background-color: #dddddd50;
+  background-color: #00814510;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -58,21 +67,14 @@ a .record {
 
 i {
   margin-right: 10px;
-}
-
-ul i {
   font-size: 17px;
-}
-
-.accordion-button {
-  padding: 0.7rem 1rem;
-  line-height: 0.5rem;
 }
 
 .accordion-item {
   border: none !important;
   background-color: transparent !important;
   font-size: 14px;
+  padding-bottom: 5px;
 }
 
 .accordion-body {
@@ -94,27 +96,39 @@ ul i {
 
 .navbar-brand {
   font-family: "Nunito";
+  width: 19ch;
+  overflow: hidden;
   color: #2e664c;
   font-weight: bold;
   font-size: 22px;
   margin-left: 10px;
+  animation: typing 1.3s steps(22), blink 0.5s step-end infinite alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .ads {
   font-family: "Nunito";
   color: #2e664c;
+  font-size: 17px;
   font-weight: bold;
   margin-left: 5px;
 }
 
-.nav-item {
-  margin-right: 8px;
-  background-color: transparent !important;
-}
-
-.side {
-  padding: 0;
-  margin-left: 12px;
+.bi-list {
+  font-size: 35px;
+  cursor: pointer;
 }
 
 .con {
@@ -138,4 +152,30 @@ ul i {
   right: 10px;
   margin-bottom: 7px;
   cursor: pointer;
+}
+
+.nav-item {
+  a {
+    i.bi-record {
+      font-size: 10px;
+    }
+
+    i.bi-record-fill {
+      font-size: 10px;
+      display: none;
+    }
+  }
+
+  &.active {
+    a {
+      i.bi-record {
+        display: none;
+      }
+
+      i.bi-record-fill {
+        display: inline;
+        font-size: 10px;
+      }
+    }
+  }
 }

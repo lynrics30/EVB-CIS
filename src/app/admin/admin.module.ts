@@ -4,21 +4,19 @@ import {MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/mater
 import { AdminRoutingModule } from './admin-routing.module';
 import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { NonIndividualComponent } from './non-individual/non-individual.component'; 
 import { SidebarComponent } from './sidebar/sidebar.component';
-
-
+import { SidebarButtonComponent } from '../sidebar-button/sidebar-button.component';
+import { ToolbarComponent } from '../toolbar/toolbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    DashboardComponent,
-    NonIndividualComponent,
-    SidebarComponent
-    
+    SidebarComponent,
+    SidebarButtonComponent,
+    ToolbarComponent,
   ],
   imports: [
     CommonModule,
@@ -27,6 +25,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MatIconModule,
     MatSidenavModule,
     FormsModule,
+    MatToolbarModule
 
 
 

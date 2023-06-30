@@ -1,36 +1,32 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { HomeComponent } from './admin/home/home.component';
-import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
-import { NonIndividualComponent } from './admin/non-individual/non-individual.component';
+import { LoginComponent } from './pages/login/login.component';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { SidebarButtonComponent } from './sidebar-button/sidebar-button.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { UserRegistrationComponent } from './pages/user-registration/user-registration.component';
 
 const routes: Routes = [
   {
     path: 'user-registration',
-    component:UserRegistrationComponent
+    component: UserRegistrationComponent
   },
   {
     path: 'login',
     component: LoginComponent
   },
   {
-    path: 'home',
-    component:HomeComponent
-  },
-  {
-    path: 'dashboard',
-    component:DashboardComponent
-  },
-  {
     path: 'sidebar',
     component:SidebarComponent
   },
   {
-    path: 'non-individual',
-    component:NonIndividualComponent
+    path: 'home',
+    component:HomeComponent
+  },
+  {
+    path: 'sidebar-button',
+    component:SidebarButtonComponent
   },
   
   {
