@@ -102,21 +102,21 @@ i {
   font-weight: bold;
   font-size: 22px;
   margin-left: 10px;
-  animation: typing 1.3s steps(22), blink 0.5s step-end infinite alternate;
+  // animation: typing 1.3s steps(22), blink 0.5s step-end infinite alternate;
   overflow: hidden;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
+// @keyframes typing {
+//   from {
+//     width: 0;
+//   }
+// }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
+// @keyframes blink {
+//   50% {
+//     border-color: transparent;
+//   }
+// }
 
 .ads {
   font-family: "Nunito";
