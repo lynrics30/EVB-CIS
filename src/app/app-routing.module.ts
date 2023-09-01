@@ -24,10 +24,6 @@ const routes: Routes = [
     path: 'home',
     component:HomeComponent
   },
-  {
-    path: 'sidebar-button',
-    component:SidebarButtonComponent
-  },
   
   {
     path: 'admin',

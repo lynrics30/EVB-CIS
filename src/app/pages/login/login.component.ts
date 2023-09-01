@@ -14,8 +14,6 @@ export class LoginComponent implements OnInit{
   password:any
   showPassword = false
 
-
- constructor(private router:Router, private api:DataService) { }
   ngOnInit(): void {
   }
   
