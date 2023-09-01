@@ -1,29 +1,36 @@
-.main {
+.wrapper-fluid {
   margin: 0 auto;
-  background-color: white;
-  height: 34em;
-  width: 32.5rem;
-  box-shadow: 0px 0px 10px #7c7c7c;
-  border-radius: 0.7em;
-  margin-top: 12em;
+  background-color: rgb(255, 255, 255);
+  width: 490px;
+  height: fit-content;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  border-radius: 10px;
   padding: 1.5em;
 }
 
-.img-fluid {
+.main {
   margin: 0 auto;
-  position: absolute;
-  left: 45%;
-  top: 10.5%;
-  transform: translate(50%, 50%, 50%);
+  margin-top: 8%;
+  width: 90%;
 }
 
-img {
-  height: 165px;
-  width: 185px;
+.img-fluid {
+  height: 10px;
+  position: relative;
+  top: -130px;
+  display: flex;
+  justify-content: center;
 }
 
-img:hover {
-  scale: 1.1;
+.img-fluid img {
+  transition: 1s ease;
+}
+
+.img-fluid img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
 }
 
 h2 {
@@ -34,7 +41,7 @@ h2 {
 
 i {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 3%;
   position: relative;
 }
@@ -44,8 +51,10 @@ i {
   padding: 0;
 }
 
-label {
+.log {
   font-weight: bold;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
 .pass {
@@ -62,19 +71,13 @@ label {
   cursor: pointer;
 }
 
-.container-fluid {
-  margin: 0 auto;
-  margin-top: 12%;
-  width: 90%;
-}
-
 .form-control {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 button {
   position: relative;
-  margin-top: 13%;
+  margin-top: 10%;
   width: 100%;
   height: 50px;
   color: #000000;
@@ -85,6 +88,7 @@ button {
   transition: all 0.5s;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 button::before {
@@ -129,26 +133,74 @@ button:hover::after {
   transform: scale(1, 1);
 }
 
-#forgotPass {
-  font-size: 12px;
-  color: #000000;
-  font-family: Poppins;
-  font-weight: bold;
-  cursor: pointer;
-  opacity: 0.8;
+.error-shake {
+  animation: shake 0.4s ease-in-out;
 }
 
-#forgotPass:hover {
-  color: #2e664c;
-  text-decoration: underline;
-  font-size: 13px;
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 @media screen and (min-width: 1024px) {
 }
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  img {
+    width: 135px;
+    height: 120px;
+  }
+  .img-fluid {
+    position: relative;
+    top: -127px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  img {
+    width: 110px;
+    height: 100px;
+  }
+  .img-fluid {
+    position: relative;
+    top: -107px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .log {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 40px;
+  }
+
+  .title {
+    font-size: 12.5px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button,
+  .form-group {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 20px;
+  }
 }

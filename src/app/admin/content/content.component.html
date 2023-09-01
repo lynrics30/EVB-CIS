@@ -1,18 +1,21 @@
 <div class="container-fluid px-0">
-  <mat-sidenav-container>
+  <app-toolbar [inputSideNav]="SideNav"></app-toolbar>
+  <mat-sidenav-container [hasBackdrop]="false">
     <mat-sidenav
       #SideNav
       mode="side"
       [(opened)]="opened"
+      fixedInViewport
       (opened)="events.push('open!')"
       (closed)="events.push('close!')"
     >
-      <app-sidebar></app-sidebar>
+      <app-home></app-home>
     </mat-sidenav>
 
-    <mat-sidenav-content>
-      <app-toolbar [inputSideNav]="SideNav"></app-toolbar>
+    <mat-sidenav-content style="background-color: #f6f9ff">
       <router-outlet></router-outlet>
+      <app-footer></app-footer>
     </mat-sidenav-content>
   </mat-sidenav-container>
+  <app-button-scroll></app-button-scroll>
 </div>

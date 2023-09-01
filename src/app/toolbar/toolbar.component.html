@@ -1,100 +1,84 @@
-<div class="navbar navbar-expand-lg">
-  <img
-    src="assets/img/EVBGOC.png"
-    alt=""
-    width="40px"
-    height="40px"
-    style="margin-left: 10px"
-  />
-  <span class="navbar-brand">Client Information System</span>
-
-  <div class="side"><i class="bi bi-list"></i></div>
-
-  <form class="admin" role="search">
-    <input
-      class="form-control me-2"
-      type="search"
-      placeholder="Search"
-      aria-label="Search"
+  <nav class="navbar">
+    <img
+      src="assets/img/EVBGOC.png"
+      alt=""
+      width="45px"
+      height="40px"
+      id="logo"
+      style="margin-left: 10px; cursor: pointer"
+      routerLink="./dashboard"
+      routerLinkActive="active"
     />
-    <i class="bi bi-search mt-2"></i>
-  </form>
+    <span class="navbar-brand">Client Information System</span>
 
-  <div class="con">
-    <div class="nav-item dropdown">
-      <div
-        class="nav-link dropdown-toggle"
-        href="#"
-        role="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        <img src="/assets/img/user.png" alt="" width="35px" height="35px" />
-        <span class="ads">Administrator</span>
+    <div class="side">
+      <input type="checkbox" id="checkbox" (click)="inputSideNav.toggle()" />
+      <label for="checkbox" class="toggle">
+        <div class="bar bar--top"></div>
+        <div class="bar bar--middle"></div>
+        <div class="bar bar--bottom"></div>
+      </label>
+    </div>
+
+    <form class="admin" role="search">
+      <input
+        class="form-control me-2"
+        placeholder="Search"
+        aria-label="Search"
+        id="hanap"
+      />
+      <i class="bi bi-search mt-2"></i>
+    </form>
+
+    
+
+    <div class="con">
+
+      <!-- <label class="switch mt-2">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label> -->
+
+      <div class="nav-item dropdown">
+        <div
+          class="nav-link dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img src="assets/img/users.png" alt="" width="35px" height="35px" />
+          <span class="ads">{{ user }}</span>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow p-2">
+          <li>
+            <a
+              class="dropdown-item mb-1"
+              routerLink="./profile"
+              routerLinkActive="active"
+            >
+              <i class="bi bi-person"></i>
+              Profile</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="./settings"
+              routerLinkActive="active"
+            >
+              <i class="bi bi-gear"></i>
+              Settings</a
+            >
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-box-arrow-right"></i>
+              Sign Out</a
+            >
+          </li>
+        </ul>
       </div>
-      <ul class="dropdown-menu">
-        <li>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-person"></i>
-            Profile</a
-          >
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-gear"></i>
-            Settings</a
-          >
-        </li>
-        <li><hr class="dropdown-divider" /></li>
-        <li>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-box-arrow-right"></i>
-            Sign Out</a
-          >
-        </li>
-      </ul>
     </div>
-  </div>
-</div>
-
-<!-- <nav class="navbar" style="background-color: #173074">
-  <div class="container-fluid">
-    <a class="side-nav-button"
-      ><mat-icon
-        (click)="inputSideNav.toggle()"
-        style="color: white"
-        aria-hidden="false"
-        aria-label="Example home icon"
-        >menu</mat-icon
-      ></a
-    >
-    <div class="dropdown">
-      <a
-        href="#"
-        class="Admin d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
-        id="dropdownUser1"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        <img
-          src="https://github.com/mdo.png"
-          alt=""
-          width="25"
-          height="25"
-          class="rounded-circle me-2"
-        />
-        <span style="font-weight: 500">Admin</span>
-      </a>
-      <ul
-        class="'btn"
-        class="dropdown-menu text-small shadow"
-        aria-labelledby="dropdownUser1"
-      >
-        <li><a class="dropdown-item">Profile</a></li>
-        <li><a class="dropdown-item">Settings</a></li>
-        <li><hr class="dropdown-divider" /></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
+  </nav>

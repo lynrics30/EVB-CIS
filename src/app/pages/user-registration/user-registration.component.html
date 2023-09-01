@@ -1,17 +1,23 @@
-<div class="img-fluid">
-  <img src="assets/img/EVBGOC.png" style="align-content: center" alt="" />
-</div>
-<div class="main">
-  <div class="container-fluid">
-    <div class="wrapper-fluid">
-      <div class="row no-gutter">
-        <div class="col-mb-12">
-          <h2 style="color: #2e664c; font-weight: bold; font-size: 25px">
-            Create an Account
-          </h2>
-          <p>Enter the personal details to create account</p>
+<div
+  class="container d-flex justify-content-center align-items-center"
+  style="height: 100vh"
+>
+  <div class="wrapper-fluid px-0 mx-auto">
+    <div class="main no-gutter">
+      <div class="col-mb-12">
+        <div class="img-fluid">
+          <img src="assets/img/EVBGOC.png" width="150px" height="130px" />
+        </div>
 
-          <select class="form-select" aria-label="Default select example">
+        <div class="caption">
+          <h2>Create an Account</h2>
+          <p style="line-height: 0.5">
+            Enter the personal details to create account
+          </p>
+        </div>
+
+        <div class="log">
+          <select class="form-select mt-4" aria-label="Default select example">
             <option selected>Select Branch</option>
             <option value="1">Biñan Branch</option>
             <option value="2">Cainta Branch</option>
@@ -36,7 +42,7 @@
             <option value="8">SPP Department</option>
           </select>
 
-          <div class="mt-5" style="font-weight: bold">
+          <div class="regs">
             <label for="exampleFormControlInput1" class="form-label"
               >Full Name</label
             >
@@ -53,15 +59,14 @@
               >Designation</label
             >
             <input type="text" class="form-control" id="designation" />
+            <button
+              type="button"
+              (click)="submit()"
+              class="btn btn-success mb-2"
+            >
+              Create an Account
+            </button>
           </div>
-          <button
-            type="button"
-            style="font-weight: bold; font-family: Open Sans"
-            (click)="submit()"
-            class="btn btn-success"
-          >
-            Create an Account
-          </button>
         </div>
       </div>
     </div>

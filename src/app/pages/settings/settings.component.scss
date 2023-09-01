@@ -1,0 +1,81 @@
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin-top: 4.5rem;
+  transition: all 0.5s;
+  // overflow: auto;
+  // padding-bottom: 5rem;
+}
+
+.pos {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e664c;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #899bbd;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+  color: #2e664c;
+  font-size: 22px;
+}
+
+.card {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.card-title {
+  padding: 20px 0 15px 0;
+  font-size: 18px;
+  color: #2e664c;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 0 20px 20px 20px;
+}
+
+.card-img-overlay {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-tabs-bordered {
+  border-bottom: 2px solid #ebeef4;
+}
+
+.nav-tabs-bordered .nav-link {
+  margin-bottom: -2px;
+  border: none;
+  color: #2c384e;
+  font-weight: bold;
+}
+
+.nav-tabs-bordered .nav-link:hover,
+.nav-tabs-bordered .nav-link:focus {
+  color: #2e664c;
+}
+
+.nav-tabs-bordered .nav-link.active {
+  background-color: #fff;
+  color: #2e664c;
+  border-bottom: 2px solid #2e664c;
+}
+
+.profile .profile-edit label, .tab-pane .row .col-form-label{
+  font-weight: 600;
+  color: rgba(1, 41, 112, 0.6);
+}
+
+.profile .profile-edit img {
+  max-width: 120px;
+}

@@ -1,0 +1,72 @@
+<h2
+  mat-dialog-title
+  style="
+    background-color: #2e664c;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+  "
+>
+  Add Record
+</h2>
+<mat-dialog-content class="mat-typography">
+  <h1
+    class="mt-4"
+    style="
+      font-weight: bold;
+      color: #2e664c;
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+    "
+  >
+    1601C
+  </h1>
+  <div class="info mb-3 mt-3">
+    <label for="tin" class="form-label">Tin:</label>
+    <input type="number" class="form-control" id="tin" />
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="tpn" class="form-label">Tax Payers Name:</label>
+    <input type="text" class="form-control" id="tpn" />
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="month" class="form-label">Month:</label>
+    <input type="date" class="form-control" id="month" />
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="gross" class="form-label">Gross:</label>
+    <input type="number" class="form-control" id="gross" />
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="er" class="form-label">Benefits ER:</label>
+    <input type="number" class="form-control" id="er" />
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="ee" class="form-label">Benefits EE:</label>
+    <input type="number" class="form-control" id="ee" />
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="remit" class="form-label">Date of Remittance:</label>
+    <input type="date" class="form-control" id="remit" />
+  </div>
+  <div class="mt-4">
+    <h2><strong>REMARKS</strong></h2>
+    <div class="form-floating">
+      <textarea
+        class="form-control"
+        placeholder="Leave a comment here"
+        id="remarks"
+        style="height: 230px"
+      ></textarea>
+      <label for="remarks">Comments</label>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions class="float-end">
+  <button class="btn btn-secondary" style="margin-right: 10px" mat-dialog-close>
+    Cancel
+  </button>
+  <button class="btn btn-success" [mat-dialog-close]="true" cdkFocusInitial>
+    Submit
+  </button>
+</mat-dialog-actions>

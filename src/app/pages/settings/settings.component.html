@@ -1,0 +1,352 @@
+<div class="container-fluid">
+  <h2 class="pos">Settings</h2>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mt-0">
+      <li class="breadcrumb-item">Home</li>
+      <li class="breadcrumb-item active" aria-current="page">Settings</li>
+    </ol>
+  </nav>
+  <section class="section profile">
+    <div class="card">
+      <div class="card-body pt-3">
+        <!-- Bordered Tabs -->
+        <ul class="nav nav-tabs nav-tabs-bordered">
+          <li class="nav-item">
+            <button
+              class="nav-link active"
+              data-bs-toggle="tab"
+              data-bs-target="#profile-edit"
+            >
+              Edit Profile
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#profile-change-password"
+            >
+              Change Password
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content pt-2">
+          <div
+            class="tab-pane fade show active profile-edit pt-3"
+            id="profile-edit"
+          >
+            <!-- Profile Edit Form -->
+            <form>
+              <div class="row mb-3">
+                <label
+                  for="profileImage"
+                  class="col-md-4 col-lg-3 col-form-label"
+                  >Profile Image</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <img src="assets/img/users.png" alt="Profile" />
+                  <div class="pt-2">
+                    <a
+                      class="btn btn-primary btn-sm"
+                      title="Upload new profile image"
+                      ><i class="bi bi-upload"></i
+                    ></a>
+                    <a
+                      class="btn btn-danger btn-sm"
+                      title="Remove my profile image"
+                      style="margin-left: 5px"
+                      ><i class="bi bi-trash"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="fullName" class="col-md-4 col-lg-3 col-form-label"
+                  >Full Name</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="fullName"
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="about" class="col-md-4 col-lg-3 col-form-label"
+                  >About</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <textarea
+                    name="about"
+                    class="form-control"
+                    id="about"
+                    style="height: 100px"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="company" class="col-md-4 col-lg-3 col-form-label"
+                  >Company</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="company"
+                    type="text"
+                    class="form-control"
+                    id="company"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="Job" class="col-md-4 col-lg-3 col-form-label"
+                  >Job</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input name="job" type="text" class="form-control" id="Job" />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="Country" class="col-md-4 col-lg-3 col-form-label"
+                  >Country</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="country"
+                    type="text"
+                    class="form-control"
+                    id="Country"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="Address" class="col-md-4 col-lg-3 col-form-label"
+                  >Address</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="address"
+                    type="text"
+                    class="form-control"
+                    id="Address"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="Phone" class="col-md-4 col-lg-3 col-form-label"
+                  >Phone</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="phone"
+                    type="text"
+                    class="form-control"
+                    id="Phone"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="Email" class="col-md-4 col-lg-3 col-form-label"
+                  >Email</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="email"
+                    type="email"
+                    class="form-control"
+                    id="Email"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="Twitter" class="col-md-4 col-lg-3 col-form-label"
+                  >Twitter Profile</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="twitter"
+                    type="text"
+                    class="form-control"
+                    id="Twitter"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="Facebook" class="col-md-4 col-lg-3 col-form-label"
+                  >Facebook Profile</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="facebook"
+                    type="text"
+                    class="form-control"
+                    id="Facebook"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="Instagram" class="col-md-4 col-lg-3 col-form-label"
+                  >Instagram Profile</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="instagram"
+                    type="text"
+                    class="form-control"
+                    id="Instagram"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="Linkedin" class="col-md-4 col-lg-3 col-form-label"
+                  >Linkedin Profile</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="linkedin"
+                    type="text"
+                    class="form-control"
+                    id="Linkedin"
+                  />
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-success">
+                  Save Changes
+                </button>
+              </div>
+            </form>
+            <!-- End Profile Edit Form -->
+          </div>
+
+          <div class="tab-pane fade pt-3" id="profile-change-password">
+            <!-- Change Password Form -->
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+              <div class="row mb-3">
+                <label
+                  for="currentPassword"
+                  class="col-md-4 col-lg-3 col-form-label"
+                  >Current Password</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="password"
+                    type="password"
+                    class="form-control"
+                    id="currentPassword"
+                    formControlName="currentpassword"
+                  />
+                  <div
+                    *ngIf="
+                      submitted && registerForm.get('currentpassword').errors
+                    "
+                    class="alert alert-danger mt-2"
+                  >
+                    <div
+                      *ngIf="
+                        registerForm.get('currentpassword').errors?.['required']
+                      "
+                    >
+                      Password is required
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label
+                  for="newPassword"
+                  class="col-md-4 col-lg-3 col-form-label"
+                  >New Password</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="newpassword"
+                    type="password"
+                    class="form-control"
+                    id="newPassword"
+                    formControlName="password"
+                  />
+                  <div
+                    *ngIf="submitted && registerForm.get('password').errors"
+                    class="alert alert-danger mt-2"
+                  >
+                    <div
+                      *ngIf="registerForm.get('password').errors?.['required']"
+                    >
+                      New Password is required
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label
+                  for="renewPassword"
+                  class="col-md-4 col-lg-3 col-form-label"
+                  >Confirm New Password</label
+                >
+                <div class="col-md-8 col-lg-9">
+                  <input
+                    name="renewpassword"
+                    type="password"
+                    class="form-control"
+                    id="renewPassword"
+                    formControlName="confirmPassword"
+                  />
+                  <div
+                    *ngIf="
+                      submitted && registerForm.get('confirmPassword').errors
+                    "
+                    class="alert alert-danger mt-2"
+                  >
+                    <div
+                      *ngIf="
+                        registerForm.get('confirmPassword').errors?.['required']
+                      "
+                    >
+                      Confirm Password is required
+                    </div>
+
+                    <div
+                      *ngIf="
+                        registerForm.get('confirmPassword').errors[
+                          'confirmPasswordValidator'
+                        ]
+                      "
+                    >
+                      New Password and Confirm Password didn't match.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-success">
+                  Change Password
+                </button>
+              </div>
+            </form>
+            <!-- End Change Password Form -->
+          </div>
+        </div>
+        <!-- End Bordered Tabs -->
+      </div>
+    </div>
+  </section>
+</div>

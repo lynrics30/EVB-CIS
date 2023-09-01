@@ -11,6 +11,7 @@ export class UserRegistrationComponent {
   constructor(private router:Router, private api:DataService) { }
 
   submit(){
-    this.router.navigate(['/login'])
+    this.router.navigate(['/admin'])
+    alert("Added Successfully!")
   }
 }

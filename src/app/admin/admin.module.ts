@@ -6,17 +6,19 @@ import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { SidebarButtonComponent } from '../sidebar-button/sidebar-button.component';
+import { ContentComponent } from './content/content.component';
 import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { FooterComponent } from '../footer/footer.component';
+import { ButtonScrollComponent } from '../button-scroll/button-scroll.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    SidebarComponent,
-    SidebarButtonComponent,
+    ContentComponent,
     ToolbarComponent,
+    FooterComponent,
+    ButtonScrollComponent
   ],
   imports: [
     CommonModule,
@@ -38,7 +40,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   providers: [
     {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'}}
   ],
-  bootstrap: [HomeComponent],
+  bootstrap: [ContentComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AdminModule { }

@@ -5,11 +5,11 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { delay } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  selector: 'app-content',
+  templateUrl: './content.component.html',
+  styleUrls: ['./content.component.scss']
 })
-export class SidebarComponent{
+export class ContentComponent{
   events: string[] = [];
   opened: boolean = true;
 
@@ -17,7 +17,7 @@ export class SidebarComponent{
   SideNav!: MatSidenav;
 
 
-  title = 'EVB-CIS';
+  title = 'EVBCIS';
   constructor(private observer: BreakpointObserver) {}
 
   ngAfterViewInit() {

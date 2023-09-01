@@ -1,25 +1,10 @@
 .side-bar {
-  z-index: 10;
   height: 100%;
-  overflow: hidden;
-  color: black;
-  padding: 0;
-  margin: 0;
-  background-color: white;
-  box-shadow: 0px 0px 3px #7c7c7c;
+  overflow: auto;
 }
 
-.side-bar ul {
-  margin-top: 60px;
-}
-
-.accordion-body .nav-item {
-  padding: 0;
-}
-
-a .record {
-  width: 30px;
-  height: 20px;
+ul {
+  margin-top: 4.4rem;
 }
 
 .active i,
@@ -27,13 +12,35 @@ a .record {
   color: #0e7545;
 }
 
-.nav-link:hover {
-  background-color: #00814510;
+.nav-link:hover{
+  background-color: #0db86815;
+}
+
+.nav-link {
+  position: relative;
   cursor: pointer;
 }
 
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0e7545;
+  transform-origin: bottom left;
+  transition: transform 0.50s ease-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .hoho .active {
-  background-color: #00814510;
+  background-color: #0db86815;
 }
 
 .menu {
@@ -49,7 +56,7 @@ a .record {
 }
 
 .accordion-button:hover {
-  background-color: #00814510;
+  background-color: #0db86815;
 }
 
 .accordion li {
@@ -58,7 +65,11 @@ a .record {
 
 .accordion-button:not(.collapsed) {
   color: #0e7545;
-  background-color: #00814510;
+  background-color: #0db86815;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23909090c5'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -107,4 +118,13 @@ i {
       }
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(186, 186, 190, 0.911);
+  border-radius: 10px;
 }

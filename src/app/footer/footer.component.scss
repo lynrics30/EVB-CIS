@@ -1,0 +1,50 @@
+.container-fluid {
+  margin: 0 auto;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid rgba(110, 110, 110, 0.25);
+  background-color: transparent !important;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.foot {
+  text-decoration: none;
+  font-family: "Nunito";
+  color: #2e664c;
+  display: inline-block;
+  position: relative;
+}
+
+.foot:hover{
+  color: #006eff;
+}
+
+.foot::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #006eff;
+  transform-origin: bottom right;
+  transition: transform 0.30s ease-out;
+}
+
+.foot:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+span {
+  color: #8b8b8bcb;
+}

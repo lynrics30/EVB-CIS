@@ -1,0 +1,164 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.gif {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.content .main-heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.3rem;
+  padding: 0.7rem 0;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background: #2e664c;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.social-links a {
+  font-size: 40px;
+  margin-right: 10px;
+  color: rgba(1, 41, 112, 0.5);
+}
+
+.bi-messenger {
+  background: radial-gradient(
+    circle at 5% 110%,
+    #0695ff 15%,
+    #a334fa 60%,
+    #ff6968 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+}
+
+// .home {
+//   animation-duration: 2s;
+//   animation-iteration-count: infinite;
+//   margin: 0 auto 0 auto;
+//   transform-origin: bottom;
+// }
+
+// .home {
+//   animation-name: home;
+//   animation-timing-function: ease;
+// }
+
+// @keyframes home {
+//   0% {
+//     transform: scale(1, 1) translateY(0);
+//   }
+//   10% {
+//     transform: scale(1.1, 0.9) translateY(0);
+//   }
+//   30% {
+//     transform: scale(0.9, 1.1) translateY(-20px);
+//   }
+//   50% {
+//     transform: scale(1, 1) translateY(0);
+//   }
+//   100% {
+//     transform: scale(1, 1) translateY(0);
+//   }
+// }
+
+.main-heading {
+  width: 17ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: type 2.7s steps(30) infinite;
+  margin: 0 auto;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+}
+
+.social-links {
+  position: relative;
+  display: inline-block;
+}
+
+.social-links .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: #2e664c;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 13px;
+  right: 150%;
+}
+
+.social-links .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #2e664c;
+}
+
+.social-links .tooltiptext {
+  visibility: visible;
+}
+
+.tooltiptext {
+  animation: tooltiptext 1s ease infinite;
+}
+
+@keyframes tooltiptext {
+  30% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: rotate(-3deg) scale(1.2);
+  }
+  60% {
+    transform: rotate(-3deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(3deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(3deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,64 +1,22 @@
-<div class="navbar navbar-expand-lg">
-  <img
-    src="assets/img/EVBGOC.png"
-    alt=""
-    width="40px"
-    height="40px"
-    style="margin-left: 10px"
-  />
-  <span class="navbar-brand">Client Information System</span>
-
-  <div class="side"><i class="bi bi-list"></i></div>
-
-  <form class="admin" role="search">
-    <input
-      class="form-control me-2"
-      type="search"
-      placeholder="Search"
-      aria-label="Search"
+<aside class="side-bar flex-shrink-0 p-4" style="width: 320px">
+  <!-- <a
+    class="d-flex justify-content-center align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+    routerLink="./dashboard"
+  >
+    <img
+      class="logo"
+      src="assets/img/EVBGOC.png"
+      width="50px"
+      height="45px"
+      alt=""
     />
-    <i class="bi bi-search mt-2"></i>
-  </form>
-
-  <div class="con">
-    <div class="nav-item dropdown">
-      <div
-        class="nav-link dropdown-toggle"
-        href="#"
-        role="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        <img src="assets/img/users.png" alt="" width="35px" height="35px" />
-        <span class="ads">Administrator</span>
-      </div>
-      <ul class="dropdown-menu">
-        <li>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-person"></i>
-            Profile</a
-          >
-        </li>
-        <li><hr class="dropdown-divider" /></li>
-        <li>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-gear"></i>
-            Settings</a
-          >
-        </li>
-        <li><hr class="dropdown-divider" /></li>
-        <li>
-          <a class="dropdown-item" href="#">
-            <i class="bi bi-box-arrow-right"></i>
-            Sign Out</a
-          >
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="side-bar d-flex flex-column flex-shrink-0 p-4" style="width: 330px">
+    <span
+      class="fs-4"
+      style="margin-left: 10px; font-weight: bold; color: #2e664c"
+      >EVB CIS</span
+    >
+  </a>
+  <hr /> -->
   <ul class="nav nav-pills flex-column mb-auto">
     <div class="hoho">
       <li class="nav-item" routerLink="./dashboard" routerLinkActive="active">
@@ -75,6 +33,16 @@
         <a class="nav-link text-dark" aria-current="page">
           <i class="bi bi-megaphone"></i>
           <span class="menu">Announcement</span>
+        </a>
+      </li>
+      <li
+        class="nav-item mt-1"
+        routerLink="/user-registration"
+        routerLinkActive="active"
+      >
+        <a class="nav-link text-dark" aria-current="page">
+          <i class="bi bi-person-add"></i>
+          <span class="menu">Create new account</span>
         </a>
       </li>
     </div>
@@ -159,71 +127,103 @@
                 <span>Overall</span>
               </a>
             </li>
-            <li class="nav-item" routerLink="./rdf" routerLinkActive="active">
+            <li class="nav-item" routerLink="./binan" routerLinkActive="active">
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
                 <span>Biñan Branch</span>
               </a>
             </li>
-            <li class="nav-item" routerLink="./nc" routerLinkActive="active">
+            <li
+              class="nav-item"
+              routerLink="./cainta"
+              routerLinkActive="active"
+            >
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
                 <span>Cainta Branch</span>
               </a>
             </li>
-            <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
+            <li
+              class="nav-item"
+              routerLink="./calapan"
+              routerLinkActive="active"
+            >
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
                 <span>Calapan Branch</span>
               </a>
             </li>
-            <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
+            <li
+              class="nav-item"
+              routerLink="./head-office"
+              routerLinkActive="active"
+            >
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
                 <span>Head Office</span>
               </a>
             </li>
-            <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
+            <li
+              class="nav-item"
+              routerLink="./intramuros"
+              routerLinkActive="active"
+            >
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
                 <span>Intramuros Branch</span>
               </a>
             </li>
-            <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
+            <li
+              class="nav-item"
+              routerLink="./lemery"
+              routerLinkActive="active"
+            >
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
                 <span>Lemery Branch</span>
               </a>
             </li>
-            <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
+            <li class="nav-item" routerLink="./lipa" routerLinkActive="active">
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
                 <span>Lipa Branch</span>
               </a>
             </li>
-            <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
+            <li
+              class="nav-item"
+              routerLink="./printing"
+              routerLinkActive="active"
+            >
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
                 <span>Printing Press</span>
               </a>
             </li>
-            <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
+            <li
+              class="nav-item"
+              routerLink="./stronghold"
+              routerLinkActive="active"
+            >
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
                 <span>Stronghold Insurance</span>
-                <div style="margin-left: 18px">Company, Inc.</div>
+                <div style="margin-left: 19px">Company, Inc.</div>
               </a>
             </li>
-            <li class="nav-item" routerLink="./ssf" routerLinkActive="active">
+            <li
+              class="nav-item"
+              routerLink="./taytay"
+              routerLinkActive="active"
+            >
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
@@ -255,7 +255,7 @@
           data-bs-parent="#accordionFlushExample"
         >
           <div class="accordion-body">
-            <li class="nav-item" routerLink="./hei" routerLinkActive="active">
+            <li class="nav-item" routerLink="./c1601" routerLinkActive="active">
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
@@ -364,10 +364,295 @@
           data-bs-parent="#accordionFlushExample"
         >
           <div class="accordion-body">
-            <li class="nav-item" routerLink="./hei" routerLinkActive="active">
+            <div class="accordion accordion-flush" id="accordionFlushExample2">
+              <!-- <div class="accordion-item">
+                <h2 class="accordion-header" id="bir-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#bir-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="bir-collapseOne"
+                  >
+                    <i class="bi bi-info-circle" style="font-size: 15px"></i>
+                    <span class="menu">BIR</span>
+                  </button>
+                </h2>
+                <div
+                  id="bir-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="bir-headingOne"
+                  data-bs-parent="#accordionFlushExample2"
+                >
+                  <div class="accordion-body">
+                    <li
+                      class="nav-item"
+                      routerLink="./announcement"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Registration</span>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Closure</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-2"
+                    aria-expanded="false"
+                    aria-controls="flush-2"
+                  >
+                    <i class="bi bi-info-circle" style="font-size: 15px"></i>
+                    <span class="menu">COR Update</span>
+                  </button>
+                </h2>
+                <div
+                  id="flush-2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample2"
+                >
+                  <div class="accordion-body">
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Change Trade Name</span>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Change Address</span>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Conversion from</span>
+                        <div style="margin-left: 19px">Non-Vat to Vat</div>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Additional WE / WC</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-3"
+                    aria-expanded="false"
+                    aria-controls="flush-3"
+                  >
+                    <i class="bi bi-info-circle" style="font-size: 15px"></i>
+                    <span class="menu">Business Permit Registration</span>
+                  </button>
+                </h2>
+                <div
+                  id="flush-3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample2"
+                >
+                  <div class="accordion-body">
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Other Requirements</span>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Certificate of Use</span>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Building Permit</span>
+                        <div style="margin-left: 19px">Application</div>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Requirements of DAR</span>
+                        <div style="margin-left: 19px">Clearance</div>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>City Update</span>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>City Closure</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-4"
+                    aria-expanded="false"
+                    aria-controls="flush-4"
+                  >
+                    <i class="bi bi-info-circle" style="font-size: 15px"></i>
+                    <span class="menu">DTI (New Registration)</span>
+                  </button>
+                </div>
+                <div
+                  id="flush-4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionFlushExample2"
+                >
+                  <div class="accordion-body">
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Scope</span>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>For Cancellation of DTI</span>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>Change of Scope</span>
+                      </a>
+                    </li>
+                    <li
+                      class="nav-item"
+                      routerLink="./hei"
+                      routerLinkActive="active"
+                    >
+                      <a class="nav-link text-dark">
+                        <i class="bi bi-record" style="font-size: 10px"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <span>For Renewal</span>
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <li
+              class="nav-item"
+              routerLink="./app-tin"
+              routerLinkActive="active"
+            >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>BIR</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span
+                  >Application For Tin
+                  <div style="margin-left: 18px">Issuance / Update</div>
+                </span>
               </a>
             </li>
             <li
@@ -376,14 +661,38 @@
               routerLinkActive="active"
             >
               <a class="nav-link text-dark">
-                <i class="bi bi-record" style="font-size: 10px"></i
-                ><span>Application For Tin</span>
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Application For Receipts</span>
+                <div style="margin-left: 19px">Authority to Print</div>
+              </a>
+            </li>
+
+            <li
+              class="nav-item"
+              routerLink="./researches"
+              routerLinkActive="active"
+            >
+              <a class="nav-link text-dark">
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Books Update</span>
+              </a>
+            </li>
+            <li
+              class="nav-item"
+              routerLink="./researches"
+              routerLinkActive="active"
+            >
+              <a class="nav-link text-dark">
+                <i class="bi bi-record" style="font-size: 10px"></i>
+                <i class="bi bi-record-fill"></i>
+                <span>Barangay Closure</span>
               </a>
             </li>
           </div>
         </div>
       </div>
-
       <div class="accordion-item">
         <div class="accordion-header" id="flush-headingFive">
           <button
@@ -405,7 +714,11 @@
           data-bs-parent="#accordionFlushExample"
         >
           <div class="accordion-body">
-            <li class="nav-item" routerLink="./hei" routerLinkActive="active">
+            <li
+              class="nav-item"
+              routerLink="./branches"
+              routerLinkActive="active"
+            >
               <a class="nav-link text-dark">
                 <i class="bi bi-record" style="font-size: 10px"></i>
                 <i class="bi bi-record-fill"></i>
@@ -417,4 +730,4 @@
       </div>
     </div>
   </ul>
-</div>
+</aside>

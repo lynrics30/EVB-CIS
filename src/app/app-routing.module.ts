@@ -2,10 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './admin/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
-import { SidebarComponent } from './admin/sidebar/sidebar.component';
-import { SidebarButtonComponent } from './sidebar-button/sidebar-button.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ContentComponent } from './admin/content/content.component';
 import { UserRegistrationComponent } from './pages/user-registration/user-registration.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {
@@ -17,8 +16,8 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path: 'sidebar',
-    component:SidebarComponent
+    path: 'content',
+    component:ContentComponent
   },
   {
     path: 'home',
@@ -30,9 +29,13 @@ const routes: Routes = [
     loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
   },
   {
-    path: '**',
+    path: '',
     redirectTo: '/login',
     pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: PagenotfoundComponent
   }
 ];
 

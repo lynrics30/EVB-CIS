@@ -1,0 +1,28 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.form-label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn {
+  width: 120px;
+}
+
+.mat-typography {
+  font-family: "Open Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(186, 186, 190);
+}

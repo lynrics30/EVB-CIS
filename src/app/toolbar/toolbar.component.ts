@@ -8,6 +8,8 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class ToolbarComponent implements OnInit{
 
+  user = "Administrator"
+
   @Input()
   inputSideNav!: MatSidenav;
 
@@ -15,5 +17,16 @@ export class ToolbarComponent implements OnInit{
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public isLightTheme = false;
+
+  onThemeSwitchChange() {
+    this.isLightTheme = !this.isLightTheme;
+
+    document.body.setAttribute(
+      'data-theme',
+      this.isLightTheme ? 'light' : 'dark'
+    );
   }
 }

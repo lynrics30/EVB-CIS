@@ -1,1 +1,51 @@
-<p>announcement works!</p>
+<div class="container-fluid">
+  <h2 class="pos">Announcement</h2>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mt-0">
+      <li class="breadcrumb-item">Home</li>
+      <li class="breadcrumb-item active" aria-current="page">Announcement</li>
+    </ol>
+  </nav>
+
+  <div class="pub">
+    <h4>Create an Announcement</h4>
+    <form [formGroup]="uploadForm" (ngSubmit)="submit()">
+      <!-- Select File -->
+      <div class="insert">
+        <!-- Image Preview -->
+        <div class="preview" *ngIf="imageURL && imageURL !== ''">
+          <img [src]="imageURL" [alt]="uploadForm.value.name" />
+        </div>
+        <label for="images" class="drop-container" id="dropcontainer">
+          <i class="bi bi-image" style="font-size: 120px; color: #2e664c"></i>
+          <span class="drop-title">Upload photo here</span>
+          or
+          <input
+            type="file"
+            id="images"
+            style="margin: 0 auto;"
+            accept="image/*"
+            (change)="showPreview($event)"
+            required
+          />
+        </label>
+      </div>
+
+      <!-- Assign Image Alt -->
+      <div class="content mt-5">
+        <h5>Title</h5>
+        <input class="form-control mt-2" formControlName="title" />
+        <h5>Caption</h5>
+        <input class="form-control mt-2" formControlName="caption" />
+      </div>
+
+      <button
+        class="btn btn-success"
+        type="submit"
+        style="width: 100%; padding: 15px; margin-top: 50px; font-weight: bold"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
