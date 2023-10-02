@@ -35,7 +35,7 @@ h4 {
 }
 
 .admin {
-  width: 230px;
+  width: 300px;
   display: flex;
   justify-content: right;
   position: relative;
@@ -48,22 +48,26 @@ h4 {
   cursor: pointer;
 }
 
-.page,
-.search {
-  display: flex;
-  justify-content: flex-end;
-}
+// .page,
+// .search {
+//   display: flex;
+//   justify-content: flex-end;
+// }
 
 table {
-  overflow: auto;
-  max-width: 100%;
+  // overflow: auto;
+  width: 100% !important;
   white-space: nowrap;
 }
 
 .table-responsive {
-  max-height: 610px;
+  // max-height: 610px;
   overflow: auto;
 }
+
+// ::ng-deep table.dataTable td.dataTables_empty {
+//   display: none;
+// }
 
 th,
 thead {
@@ -71,25 +75,10 @@ thead {
   top: 0;
   background-color: #2e664c;
   color: #ffffff;
-  min-width: 180px;
 }
 
-.add {
+.btn {
   margin: 0 auto;
   display: flex;
-  justify-content: flex-end;
-}
-
-.modal-backdrop {
-  z-index: 1040 !important;
-  display: none;
-}
-
-.modal-content {
-  margin: 2px auto;
-  z-index: 1100 !important;
-}
-
-.modal-body {
-  height: 65vh;
+  justify-content: center;
 }

@@ -39,13 +39,6 @@ h2 {
   font-size: 25px;
 }
 
-i {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 3%;
-  position: relative;
-}
-
 .title {
   text-align: center;
   padding: 0;
@@ -59,25 +52,20 @@ i {
 
 .pass {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
 }
 
 .bi {
   position: absolute;
-  right: 2px;
-  top: 12px;
   font-size: 17px;
   cursor: pointer;
-}
-
-.form-control {
-  margin-bottom: 30px;
+  right: 10px;
 }
 
 button {
   position: relative;
-  margin-top: 10%;
   width: 100%;
   height: 50px;
   color: #000000;
@@ -133,13 +121,22 @@ button:hover::after {
   transform: scale(1, 1);
 }
 
+.invalid-input{
+  border-color: rgb(255, 0, 0);
+}
+
+span{
+  font-size: 13px;
+  color: rgb(255, 0, 0);
+}
+
 .error-shake {
   animation: shake 0.4s ease-in-out;
 }
 
 @keyframes shake {
   10%, 90% {
-    transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
   }
   
   20%, 80% {
@@ -151,7 +148,7 @@ button:hover::after {
   }
 
   40%, 60% {
-    transform: translate3d(4px, 0, 0);
+    transform: translate3d(5px, 0, 0);
   }
 }
 
