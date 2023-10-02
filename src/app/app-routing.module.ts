@@ -5,6 +5,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { ContentComponent } from './admin/content/content.component';
 import { UserRegistrationComponent } from './pages/user-registration/user-registration.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { authGuard } from './auth.guard';
 
 const routes: Routes = [
   {
@@ -13,11 +14,11 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
   },
   {
     path: 'content',
-    component:ContentComponent
+    component:ContentComponent,
   },
   {
     path: 'home',

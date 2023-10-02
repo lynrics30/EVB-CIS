@@ -39,6 +39,7 @@ export class LoginComponent implements OnInit {
       const formData = this.loginForm.value;
 
       if (formData.username === 'admin' && formData.password === 'admin') {
+        localStorage.setItem('token', Math.random().toString());
         this.router.navigate(['/admin']);
         console.log('Login Successfully');
         alert('Login Successfully!');

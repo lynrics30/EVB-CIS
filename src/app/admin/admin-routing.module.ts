@@ -11,17 +11,21 @@ import { BranchesComponent } from '../pages/branches/branches.component';
 import { ProfileComponent } from '../pages/profile/profile.component';
 import { SettingsComponent } from '../pages/settings/settings.component';
 import { TinIssuanceUpdateComponent } from '../pages/tin-issuance-update/tin-issuance-update.component';
+import { authGuard } from '../auth.guard';
+import { roleGuard } from '../role.guard';
 
 const routes: Routes = [
   {
     path: '',
     component: ContentComponent,
-    // canActivate: [authGuard],
+    canActivate: [authGuard, roleGuard],
+    data: {
+      role: 'admin'
+    },
     children: [
       {
         path: 'dashboard',
         component: DashboardComponent,
-        data: { animation: 'openClosePage' }
       },
       {
         path: 'announcement',
