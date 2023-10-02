@@ -17,56 +17,91 @@
         </div>
 
         <div class="log">
-          <select class="form-select mt-4" aria-label="Default select example">
-            <option selected>Select Branch</option>
-            <option value="1">Biñan Branch</option>
-            <option value="2">Cainta Branch</option>
-            <option value="3">Calapan Branch</option>
-            <option value="4">Head Office</option>
-            <option value="5">Intramuros Branch</option>
-            <option value="6">Lemery Branch</option>
-            <option value="7">Lipa Branch</option>
-            <option value="8">Printing Press</option>
-            <option value="9">Stronghold Insurance Company, Inc.</option>
-            <option value="10">Taytay Branch</option>
-          </select>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select Department</option>
-            <option value="1">Marketing Department</option>
-            <option value="2">Finance Department</option>
-            <option value="3">Licensing Department</option>
-            <option value="4">Accounting Department</option>
-            <option value="5">Disbursing Department</option>
-            <option value="6">IICS Department</option>
-            <option value="7">Documentation Department</option>
-            <option value="8">SPP Department</option>
-          </select>
+          <form (ngSubmit)="submit()">
+            <select
+              class="form-select mt-4"
+              name="selectedBranch"
+              [(ngModel)]="selectedBranch"
+              aria-label="Default select example"
+            >
+              <option value="undefined" selected disabled>Select Branch</option>
+              <option *ngFor="let branches of branch" [value]="branches.name">
+                {{ branches.name }}
+              </option>
+            </select>
+            <select
+              class="form-select"
+              name="selectedDepartment"
+              [(ngModel)]="selectedDepartment"
+              aria-label="Default select example"
+            >
+              <option value="undefined" selected disabled>
+                Select Department
+              </option>
+              <option
+                *ngFor="let departments of department"
+                [value]="departments.name"
+              >
+                {{ departments.name }}
+              </option>
+            </select>
 
-          <div class="regs">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Full Name</label
-            >
-            <input type="text" class="form-control" id="fullname" />
-            <label for="exampleFormControlInput1" class="form-label"
-              >Username</label
-            >
-            <input type="text" class="form-control" id="username" />
-            <label for="exampleFormControlInput1" class="form-label"
-              >Password</label
-            >
-            <input type="password" class="form-control" id="password" />
-            <label for="exampleFormControlInput1" class="form-label"
-              >Designation</label
-            >
-            <input type="text" class="form-control" id="designation" />
-            <button
-              type="button"
-              (click)="submit()"
-              class="btn btn-success mb-2"
-            >
-              Create an Account
-            </button>
-          </div>
+            <div class="regs">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="fullname"
+                [(ngModel)]="fullname"
+              />
+
+              <label for="exampleFormControlInput1" class="form-label"
+                >Username</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="username"
+                [(ngModel)]="username"
+              />
+
+              <label for="exampleFormControlInput1" class="form-label"
+                >Password</label
+              >
+              <div class="pass">
+                <input
+                  type="{{ showPassword ? 'text' : 'password' }}"
+                  class="form-control"
+                  name="password"
+                  [(ngModel)]="password"
+                />
+                <i
+                  class="bi"
+                  [ngClass]="{
+                    'bi-eye': showPassword,
+                    'bi-eye-slash': !showPassword
+                  }"
+                  (click)="pass()"
+                >
+                </i>
+              </div>
+
+              <label for="exampleFormControlInput1" class="form-label"
+                >Role</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="role"
+                [(ngModel)]="role"
+              />
+              <button type="submit" class="btn btn-success mb-2">
+                Create an Account
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

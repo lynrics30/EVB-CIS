@@ -42,6 +42,7 @@
   font-size: 18px;
   font-weight: bold;
   color: #2e664c;
+  font-family: "Poppins", sans-serif;
 }
 
 .card-body {
@@ -203,4 +204,39 @@ h3 {
 .demo-inline-calendar-card {
   background-color: rgba(241, 241, 241, 0.336);
   width: 100%;
+}
+
+/* Announcement */
+.news .post-item+.post-item {
+  margin-top: 15px;
+}
+
+.news img {
+  width: 80px;
+  float: left;
+  border-radius: 5px;
+}
+
+.news h4 {
+  font-size: 15px;
+  margin-left: 95px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.news h4 a {
+  color: #2e664c;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.news h4 a:hover {
+  color: #006eff;
+}
+
+.news p {
+  font-size: 14px;
+  color: #777777;
+  margin-left: 95px;
 }

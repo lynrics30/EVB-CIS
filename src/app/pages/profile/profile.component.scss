@@ -66,7 +66,8 @@
 }
 
 .profile .profile-card img {
-  max-width: 120px;
+  width: 115px;
+  height: 115px;
 }
 
 .profile .profile-card h2 {
@@ -126,11 +127,10 @@
   color: rgba(1, 41, 112, 0.6);
 }
 
-.profile .profile-edit label {
-  font-weight: 600;
-  color: rgba(1, 41, 112, 0.6);
-}
-
-.profile .profile-edit img {
-  max-width: 120px;
+.prof {
+  position: relative;
+  top: -30px;
+  left: 35px;
+  border-radius: 100%;
+  margin-bottom: -25px;
 }

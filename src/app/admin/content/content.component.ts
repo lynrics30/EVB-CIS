@@ -16,8 +16,7 @@ export class ContentComponent{
   @ViewChild(MatSidenav)
   SideNav!: MatSidenav;
 
-
-  title = 'EVBCIS';
+  title = 'EVB Client Information System';
   constructor(private observer: BreakpointObserver) {}
 
   ngAfterViewInit() {

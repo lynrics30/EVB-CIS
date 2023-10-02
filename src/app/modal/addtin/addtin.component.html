@@ -1,0 +1,100 @@
+<h2
+  mat-dialog-title
+  style="
+    background-color: #2e664c;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+  "
+>
+  Add Record
+</h2>
+<mat-dialog-content class="mat-typography">
+  <h1
+    class="mt-4"
+    style="
+      font-weight: bold;
+      color: #2e664c;
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+    "
+  >
+    Application for Tin Issuance / Update
+  </h1>
+  <div class="info mb-3 mt-3">
+    <label for="pf" class="form-label">PF:</label>
+    <select class="form-select" aria-label="Default select example">
+      <option value="1">Paid</option>
+      <option value="2">Unpaid</option>
+    </select>
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="spa" class="form-label">SPA:</label>
+    <select class="form-select" aria-label="Default select example">
+      <option value="1">Paid</option>
+      <option value="2">Unpaid</option>
+    </select>
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="doc-stamp" class="form-label">Doc Stamp:</label>
+    <select class="form-select" aria-label="Default select example">
+      <option value="1">Paid</option>
+      <option value="2">Unpaid</option>
+    </select>
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="cof-bc" class="form-label"
+      >Copy of Birth Certificate or Marriage Contract:</label
+    >
+    <input type="file" class="form-control" id="cof-bc" />
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="valid-id" class="form-label">Valid ID:</label>
+    <input type="file" class="form-control" id="valid-id" />
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="email" class="form-label">Email Address:</label>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">@</span>
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Username"
+        aria-describedby="basic-addon1"
+      />
+    </div>
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="contact" class="form-label">Contact Number:</label>
+    <input type="number" class="form-control" id="contact" />
+  </div>
+  <div class="info mb-3 mt-3">
+    <label for="mother-maiden" class="form-label">Mother's maiden name:</label>
+    <input type="text" class="form-control" id="mother-maiden" />
+  </div>
+  <div class="mt-4">
+    <h2><strong>REMARKS</strong></h2>
+    <div class="form-floating">
+      <textarea
+        class="form-control"
+        placeholder="Leave a comment here"
+        id="remarks"
+        style="height: 230px"
+      ></textarea>
+      <label for="remarks">Comments</label>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions class="float-end">
+  <button class="btn btn-secondary" style="margin-right: 10px" mat-dialog-close>
+    Cancel
+  </button>
+  <button
+    (click)="submit()"
+    class="btn btn-success"
+    [mat-dialog-close]="true"
+    cdkFocusInitial
+  >
+    Submit
+  </button>
+</mat-dialog-actions>

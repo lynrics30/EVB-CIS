@@ -23,6 +23,17 @@
   justify-content: center;
 }
 
+.img-fluid img {
+  transition: 1s ease;
+}
+
+.img-fluid img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
 .caption {
   text-align: center;
 }
@@ -53,6 +64,21 @@ h2 {
   padding: 12px;
   margin-top: 30px;
   width: 100%;
+}
+
+.pass {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.bi {
+  position: absolute;
+  font-size: 17px;
+  cursor: pointer;
+  right: 10px;
+  top: 8px;
 }
 
 @media screen and (min-width: 1024px) {
